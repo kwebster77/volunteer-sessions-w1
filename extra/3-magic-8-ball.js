@@ -46,7 +46,19 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+
+  console.log("The ball has shaken!")
+
+  const number = Math.random()
+    if (number < .25){
+      return "Very positive";
+    }else if (number < .5) {
+      return "Positive";
+    }else if (number < .75){
+      return "Negative";
+    }else if (number < 1){
+      return "Very negative";
+    }
 }
 
 /* 
@@ -59,7 +71,7 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+
 }
 
 /* 
